@@ -1,0 +1,36 @@
+# --- Go specific ---
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries and coverage reports
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+
+# Dependency directories (only if you don't want to commit the vendor folder)
+# vendor/
+
+# Go workspace files
+go.work
+go.work.sum
+
+# --- VS Code specific ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# --- macOS specific ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
