@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	p1 "leetcode_go/problems/problem1_two_sum"
-	p2 "leetcode_go/problems/problem2_valid_palindrome"
+	p1 "leetcode_go/problems/problem1twosum"
+	p2 "leetcode_go/problems/problem2validpalindrome"
+	p3 "leetcode_go/problems/problem3reversestring"
 )
 
 func main() {
@@ -23,5 +24,19 @@ func main() {
 	fmt.Println(p2.IsPalindrome("hi"))
 	fmt.Println(p2.IsPalindrome("A man, a plan, a canal: Panama"))
 	fmt.Println(p2.IsPalindrome("race a car"))
-	fmt.Println(p2.IsPalindrome("0P"))
+	fmt.Println(p2.IsPalindrome(" "))
+
+	// Problem 3
+	fmt.Println("\nProblem 3 Reverse String")
+	s := []byte("hello")
+	p3.ReverseString(s)
+	fmt.Println(string(s))
+
+	s = []byte("what's up people")
+	p3.ReverseString(s)
+	fmt.Println(string(s))
+
+	s = []byte("abcd")
+	p3.ReverseString(s)
+	fmt.Println(string(s))
 }
