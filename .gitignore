@@ -6,6 +6,10 @@
 *.so
 *.dylib
 
+# Exclude the specific binary
+leetcode_go
+
+
 # Test binaries and coverage reports
 *.test
 *.out
