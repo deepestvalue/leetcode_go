@@ -1,9 +1,9 @@
-package problem2validpalindrome
+package problem125validpalindrome
 
 import "unicode"
 
 func IsPalindrome(s string) bool {
-	left, right := 0, len(s) - 1
+	left, right := 0, len(s)-1
 
 	for left < right {
 		for left < right && !(unicode.IsLetter(rune(s[left])) || unicode.IsDigit(rune(s[left]))) {
